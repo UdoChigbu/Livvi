@@ -6,19 +6,26 @@
     <link rel=" preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css')}}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}">
 </head>
-<body>
+    <body>
 
-    <div class="header">
-     <img src="{{url_for('static', filename='financial_star_logo.png')}}" alt="Logo" class="logo">   
-     <!-- <h1>Financial Star</h1> -->
-    </div>
-    
-    <div class="content">
-         
-    </div>
+        <div class="header">
+            <img src="{{url_for('static', filename='images/financial_star_logo.png')}}" alt="Logo" class="logo">   
+        </div>
 
-  
-</body>
-</html>    
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            
+            <input type="file"
+                name="csv_file"
+                accept=".pdf,.doc,.docx" 
+                id="file_input"
+                hidden
+                onchange="this.form.submit()">
+
+            <div class="csv_btn_container">
+                <label for="file_input" class="csv_btn">Upload CSV file</label>
+            </div>
+        </form>
+    </body>
+</html>     
