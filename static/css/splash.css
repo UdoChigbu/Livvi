@@ -1,0 +1,52 @@
+ html, body{
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    position: relative;
+    align-items: center;
+    height: 100%;
+    margin:0;
+   
+}
+
+body{
+    background-attachment:fixed;
+    background-size: cover;
+    background: linear-gradient(to bottom, #FF7A00,#cf823a) ;
+    background-repeat: no-repeat;
+     padding-top:5%;
+}
+
+.logo-container{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    width: 50vh;
+    height:30vh;
+  
+}
+
+.logo-container img {
+    max-width: 100vh;
+    max-height: 100vh;
+}
+
+.loading-container{
+   
+    width: 300px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+  
+}
+
+.ball{
+    border-radius: 50%;
+    background-color:white;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 40px;
+
+}
+

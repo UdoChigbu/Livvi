@@ -6,19 +6,8 @@ body{
     margin-top: 13vh;
     height: 100vh;
 }
-.header{
-    position: fixed;
-    top:0;
-    width:100%;
-    height: 9vh;
-    background-color: rgb(187, 219, 255);
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    align-items:center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
-}
+
 .csv_btn{
     width: 90px;
     height: 60px;
@@ -37,8 +26,8 @@ body{
    
 }
 .logo{
-    height:140px;
-    width:140px;
+    height:160px;
+    width:250px;
 }
 
 .csv_btn_container{

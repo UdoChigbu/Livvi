@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+
+        <title> Livvi upload page </title>
+        
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css')}}">
+
+    </head>
+    <body>
+
+        <div class="header">
+            <img src="{{url_for('static', filename='images/livvi_logo3.png')}}" alt="Logo" class="logo">   
+        </div>
+
+        <form method="POST" action="/upload" enctype="multipart/form-data">
+            
+            <input type="file"
+                name="csv_file"
+                accept=".pdf,.doc,.docx" 
+                id="file_input"
+                hidden
+                onchange="this.form.submit()">
+
+            <div class="csv_btn_container">
+                <label for="file_input" class="csv_btn">Upload CSV file</label>
+            </div>
+        </form>
+    </body>
+</html>     
