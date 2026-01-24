@@ -7,27 +7,47 @@
 
         <title> Livvi upload page </title>
         
-        <link rel="stylesheet" href="{{ url_for('static', filename='css/upload.css')}}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css')}}">
 
     </head>
     <body>
 
-        <div class="header">
-            <img src="{{url_for('static', filename='images/livvi_logo3.png')}}" alt="Logo" class="logo">   
+       <!-- images -->
+        <div class="orange-blob-logo">
+                <img src="{{url_for('static', filename='images/small-orange-blob.png')}}" alt="small blob" class="small-blob">
+                <img src="{{url_for('static', filename='images/livvi_logo3.png')}}" alt="Logo" class="logo">  
         </div>
 
         <form method="POST" action="/upload" enctype="multipart/form-data">
-            
+            <!-- file data-->
             <input type="file"
                 name="csv_file"
-                accept=".pdf,.doc,.docx" 
+                accept=".pdf,.doc,.docx,.csv" 
                 id="file_input"
                 hidden
-                onchange="this.form.submit()">
+                >
 
             <div class="csv_btn_container">
                 <label for="file_input" class="csv_btn">Upload CSV file</label>
             </div>
+
+            <!--- modal square--->
+            <div class="modal" id="file_modal">
+                <div class="modal_content">
+
+                    <h3>Selected files</h3>
+                    <span id="file_status" class="file_status">No files selected</span>
+
+                    <div class="modal_buttons">
+                        <button type="button" class="btn_primary"id="cancel_btn">Cancel</button>
+                        <button type="submit" class="btn_primary" >Submit</button>
+                    </div>
+
+                </div>
+            </div>
+
         </form>
+
+        <script src="{{ url_for('static', filename='js/upload.js')}}"></script>
     </body>
 </html>     

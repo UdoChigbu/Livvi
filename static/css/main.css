@@ -1,0 +1,56 @@
+
+@import "./pages/upload.css";
+@import "./pages/welcome.css";
+@import "./pages/splash.css";
+@import "./pages/login.css";
+
+html,body{
+    background-color: rgb(247, 235, 235);
+    height: 100%;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: rgb(1, 27, 3);
+}
+
+.orange-blob-logo{
+    width:clamp(80px, 100vw, 250px);
+    height:clamp(80px, 100vw, 250px);
+    left:-40px;
+    top:-40px;
+    position:fixed;
+
+    
+}
+
+.orange-blob-logo img{
+   object-fit:contain;
+    position:absolute;
+    max-width: 100%;
+    max-height: 100%;
+    
+}
+
+.small-blob{
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.logo{
+    left:-10px;
+    top:30px;
+}
+
+.btn_primary{
+
+    width: 80px;
+    height: 50px;
+    border-radius: 12px;
+    
+     border: none;
+    background-color:  rgb(1, 27, 3);
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    font-size: 15px;
+}

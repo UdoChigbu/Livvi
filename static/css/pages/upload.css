@@ -1,0 +1,108 @@
+
+
+body{
+    background-color: white;
+    margin: 0;
+    margin-top: 13vh;
+    height: 100vh;
+}
+
+/*main page styling*/
+.csv_btn{
+    width: 90px;
+    height: 60px;
+    border-radius: 12px;
+    border: none;
+     background-color:   rgb(1, 27, 3);
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    cursor: pointer;
+    
+    box-shadow: 0 4px 6px rgb(0, 0, 0);
+    text-align:center;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.csv_btn_container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding-top:300px;
+   
+}
+
+form{
+    all: unset;
+}
+/*modal styling*/
+
+.modal{
+    position: fixed;
+    background-color: #FF7A00;
+    align-items: center;
+    justify-content: center;
+   display:flex;
+   /*display:none;*/
+    inset:20%;
+    border-radius:45px;
+}
+
+.modal_content{
+   
+   position:relative;
+    background-color:  rgb(247, 235, 235);
+    border-radius:45px;
+    align-items: center;
+    justify-content: center;
+   
+   text-align: center;
+    width:90%;
+    height:90%;
+   
+    
+   
+  
+}
+
+.modal_buttons{
+   
+   top:90%;
+   left: 50%;
+   width:20vw;
+   position: absolute;
+   
+    align-items: center;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display:flex;
+
+   gap:100%;
+ 
+  
+}
+
+h3{
+    margin-top:0;
+    font-size: clamp(12px, 19vw, 25px);
+    font-weight:400;
+}
+
+.file_status{
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    position: relative;
+    margin-top: 10%;
+    color:rgb(0, 0, 0);
+    font-size:15px;
+    text-decoration: underline;
+    
+}
+
+
+
